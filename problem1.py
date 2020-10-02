@@ -19,3 +19,16 @@ Enter a number: 48
 """
 
 #! python3
+
+q= input("Enter a number")
+y= 0
+q= float(q)
+
+if q % 6==0 and q % 8==0:
+    q= str(q)
+    print(q +' ' + "is frue")
+ 
+else:
+    q= str(q)
+    print(q + ' '+ "is not frue")
+
