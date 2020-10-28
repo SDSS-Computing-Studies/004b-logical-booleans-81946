@@ -15,7 +15,7 @@ xx is not frue
 
 example:
 Enter a number: 48
-48 is frue.
+48 is not frue.
 """
 
 #! python3
@@ -24,7 +24,7 @@ q= input("Enter a number")
 y= 0
 q= float(q)
 
-if q % 6==0 and q % 8==0:
+if q % 6==0 and q % 8 !=0:
     q= str(q)
     print(q +' ' + "is frue")
  
