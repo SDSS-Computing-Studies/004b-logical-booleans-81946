@@ -33,11 +33,11 @@ s= round(s,10)
 z= round(z,10)
 z=int(z)
 if b==c and s==z:
-    print(q+' '"is both a perfect square and a perfect cube")
+    print(q+' '"is both a perfect square and a perfect cube.")
     
     
 elif b==c:
-    print(q+' '"is only a perfect square")
+    print(q+' '"is only a perfect square.")
     
 
 elif s==z:
