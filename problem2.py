@@ -48,7 +48,9 @@ if num > num2:
         num2= str(num2)
         print(num2 + ' ' + "is not a factor of" + ' ' + num)
 
-elif num % num2!=0:
+
+else:
+    num % num2!=0
     num= str(num)
     num2= str(num2)
     print(num + ' ' + "is not a factor of" + ' ' + num2)
