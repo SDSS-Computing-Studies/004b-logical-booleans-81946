@@ -35,49 +35,60 @@ x= int(x)
 y= int(y)
 z= int(z)
 
+lists= []
 
-if x < y and z < y:
-    answer= pow(x,2)+pow(z,2)
+lists.append(x)
+lists.append(y)
+lists.append(z)
+
+lists.sort()
+
+a= lists[0]
+b= lists[1]
+c= lists[2]
+
+if b < a and c < a:
+    answer= pow(b,2)+pow(c,2)
     answer2= math.sqrt(answer)
-    if answer2==y:
-        x= str(x)
-        y= str(y)
-        z= str(z)
-        print(x + "," + z + "," + y + ' ' + "form a Pythagorean triple")
+    if answer2==a:
+        a= str(a)
+        b= str(b)
+        c= str(c)
+        print(a + "," + b + "," + c + ' ' + "form a Pythagorean triple")
     else:
-        x= str(x)
-        y= str(y)
-        z= str(z)
-        print(x + "," + y + "," + z + ' ' +  "do not form a Pythagorean triple")        
+        a= str(a)
+        b= str(b)
+        c= str(c)
+        print(a + "," + b + "," + c + ' ' +  "do not form a Pythagorean triple")        
 
-if y < z and x < z:
-    answer= pow(y,2)+pow(x,2)
+if a < b and c < b:
+    answer= pow(a,2)+pow(c,2)
     answer2= math.sqrt(answer)
-    if answer2==z:
-        x= str(x)
-        y= str(y)
-        z= str(z)
-        print(y + "," + x + "," + z + ' ' + "form a Pythagorean triple")
+    if answer2==b:
+        a= str(a)
+        b= str(b)
+        c= str(c)
+        print(a + "," + b + "," + c + ' ' + "form a Pythagorean triple")
     else:
-        x= str(x)
-        y= str(y)
-        z= str(z)
-        print(y + "," + x + "," + z + ' ' +  "do not form a Pythagorean triple")
+        a= str(a)
+        b= str(b)
+        c= str(c)
+        print(a + "," + b + "," + c + ' ' +  "do not form a Pythagorean triple")
 
 
-if z < x and y < x:
-    answer= pow(z,2)+pow(y,2)
+if b < c and a < c:
+    answer= pow(a,2)+pow(b,2)
     answer2= math.sqrt(answer)
-    if answer2==x:
-        x= str(x)
-        y= str(y)
-        z= str(z)
-        print(z + "," + y + "," + x + ' ' + "form a Pythagorean triple")
+    if answer2==c:
+        a= str(a)
+        b= str(b)
+        c= str(c)
+        print(a + "," + b + "," + c + ' ' + "form a Pythagorean triple")
     else:
-        x= str(x)
-        y= str(y)
-        z= str(z)
-        print(z + "," + y + "," + x + ' ' +  "do not form a Pythagorean triple")
+        a= str(a)
+        b= str(b)
+        c= str(c)
+        print(a + "," + b + "," + c + ' ' +  "do not form a Pythagorean triple")
 
 
 
