@@ -43,7 +43,7 @@ if x < y and z < y:
         x= str(x)
         y= str(y)
         z= str(z)
-        print(x + "," + y + "," + z + ' ' + "form a Pythagorean triple")
+        print(x + "," + z + "," + y + ' ' + "form a Pythagorean triple")
     else:
         x= str(x)
         y= str(y)
