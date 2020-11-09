@@ -24,10 +24,10 @@ Enter another number: 25
 4 is not a factor of 25
 """
 num= input("Enter a number")
-num= float(num)
+num= int(num)
 
 num2= input("Enter another number")
-num2= float(num2)
+num2= int(num2)
 
 
 
@@ -36,24 +36,27 @@ if num > num2:
         num= str(num)
         num2= str(num2)
         print(num2 + ' ' + "is a factor of" + ' ' + num)
-
-elif num2 % num==0:
-    num= str(num)
-    num2= str(num2)
-    print(num + ' '+ "is a factor of" + ' '+ num2)
-
-if num > num2:
-    if num % num2!=0:
+    else:
         num= str(num)
         num2= str(num2)
         print(num2 + ' ' + "is not a factor of" + ' ' + num)
 
+num= int(num)
+num2= int(num2)
 
-else:
-    num % num2!=0
-    num= str(num)
-    num2= str(num2)
-    print(num + ' ' + "is not a factor of" + ' ' + num2)
+if num2 > num:
+    if num2 % num==0:
+        num= str(num)
+        num2= str(num2)
+        print(num + ' '+ "is a factor of" + ' '+ num2)
+    else:
+        num= str(num)
+        num2= str(num2)
+        print(num + ' ' + "is not a factor of" + ' ' + num2)
+
+
+
+
 
 
 
